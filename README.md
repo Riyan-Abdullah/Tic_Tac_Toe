@@ -5,7 +5,7 @@
 
 ### Play. Compete. Climb the Leaderboard.
 
-A modern **real-time multiplayer Tic Tac Toe platform** built with **Next.js, FastAPI, Supabase, and WebSockets**. Featuring AI gameplay, online multiplayer, authentication, leaderboards, achievements, tournaments, and a premium Black & Gold gaming interface.
+A modern **real-time multiplayer Tic Tac Toe platform** built with **Next.js, FastAPI, Supabase, and WebSockets**. Featuring AI gameplay, online multiplayer, authentication, leaderboards, achievements, tournaments, and a premium gaming interface.
 
 <p align="center">
 
@@ -100,7 +100,7 @@ The project follows scalable architecture, responsive UI principles, reusable co
 
 ## 🎨 Premium UI
 
-- Luxury Black & Gold Theme
+- Luxury Theme
 - Glassmorphism
 - Responsive Design
 - Framer Motion Animations
