@@ -333,11 +333,5 @@ It helps support future development and motivates continued improvements.
 
 **Play • Compete • Climb the Leaderboard**
 
-
-
-
-
-
-
 </div>
-```
+
