@@ -1,21 +1,20 @@
-```markdown
+````markdown
 <div align="center">
 
 # 🎮 TicTac Arena
 
 ### Play. Compete. Climb the Leaderboard.
 
-A modern **real-time multiplayer Tic Tac Toe platform** built with **Next.js, FastAPI, Supabase, and WebSockets**. Featuring AI gameplay, online multiplayer, authentication, leaderboards, achievements, tournaments, and a premium Black & Gold gaming interface.
+A modern **real-time multiplayer Tic Tac Toe platform** built with **Next.js, FastAPI, Supabase, and WebSockets**. Featuring AI gameplay, online multiplayer, authentication, leaderboards, achievements, and a premium Black & Gold gaming experience.
 
-<p align="center">
+<p>
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=nextdotjs)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
-![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688?style=for-the-badge&logo=fastapi)
-![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8?style=for-the-badge&logo=tailwindcss)
-![WebSockets](https://img.shields.io/badge/WebSockets-Real--Time-orange?style=for-the-badge)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 </p>
@@ -24,124 +23,84 @@ A modern **real-time multiplayer Tic Tac Toe platform** built with **Next.js, Fa
 
 ---
 
-# ✨ Overview
+## 📖 Overview
 
-**TicTac Arena** is a full-stack multiplayer gaming platform designed with modern web technologies. Players can compete against an intelligent AI or challenge friends online through real-time multiplayer powered by WebSockets.
-
-The project follows scalable architecture, responsive UI principles, reusable components, and production-ready development practices.
+**TicTac Arena** is a modern full-stack multiplayer gaming platform where players can enjoy intelligent AI matches or compete online in real time. The project is designed with scalability, performance, and clean architecture in mind while delivering a premium gaming experience.
 
 ---
 
-# 🚀 Features
+# ✨ Features
 
 ## 🔐 Authentication
 
-- Secure Login & Signup
-- Supabase Authentication
+- User Registration & Login
+- Secure Authentication with Supabase
 - Protected Routes
 - Persistent Sessions
-- User Profiles
-
----
 
 ## 🤖 AI Gameplay
 
 - Easy Difficulty
 - Medium Difficulty
 - Hard Difficulty (Minimax Algorithm)
-- Smart Move Prediction
-- Instant Game Restart
-
----
+- Instant Restart
 
 ## 🌐 Online Multiplayer
 
 - Create Private Rooms
-- Join via Room Code
+- Join with Room Code
 - Real-Time Gameplay
-- WebSocket Communication
-- Automatic Turn Synchronization
-- Reconnect Handling
-- Live Match Status
-
----
+- WebSocket Synchronization
+- Turn Validation
+- Winner Detection
+- Draw Detection
+- Automatic Reconnection
 
 ## 🏆 Competitive Features
 
-- Global Leaderboard
-- Match History
+- Leaderboard
 - Player Rankings
-- Rating System
-- Achievements
+- Match History
 - Performance Statistics
+- Achievement System
 
----
+## 🎨 User Interface
 
-## 👥 Social Features
-
-- Friends System
-- Friend Requests
-- Private Chat
-- Game Chat
-- Notifications
-- Online Status
-
----
-
-## 🏅 Tournament System
-
-- Tournament Creation
-- Tournament Brackets
-- Seasonal Rankings
-- Champion Awards
-- Live Tournament Updates
-
----
-
-## 🎨 Premium UI
-
-- Luxury Black & Gold Theme
-- Glassmorphism
-- Responsive Design
+- Premium Black & Gold Theme
+- Glassmorphism Design
+- Responsive Layout
 - Framer Motion Animations
-- Elegant Gaming Experience
 - Mobile Friendly
 
 ---
 
 # 🛠 Tech Stack
 
-## Frontend
+### Frontend
 
 - Next.js 16
 - React 19
 - TypeScript
 - Tailwind CSS
 - Zustand
-- Axios
 - Framer Motion
-- Lucide React
-- Sonner
+- Axios
 
-## Backend
+### Backend
 
 - FastAPI
 - Python
 - WebSockets
 
-## Database
+### Database
 
 - Supabase PostgreSQL
 
-## Authentication
+### Authentication
 
 - Supabase Auth
 
-## Storage
-
-- Supabase Storage
-
-## Deployment
+### Deployment
 
 - Vercel
 - Render
@@ -151,19 +110,18 @@ The project follows scalable architecture, responsive UI principles, reusable co
 
 # 📂 Project Structure
 
-```
-
+```text
 TicTacArena
 │
 ├── frontend
 │   ├── app
 │   ├── components
 │   ├── hooks
+│   ├── lib
 │   ├── services
 │   ├── store
-│   ├── lib
-│   ├── utils
-│   └── types
+│   ├── types
+│   └── utils
 │
 ├── backend
 │   ├── app
@@ -174,60 +132,7 @@ TicTacArena
 │   └── main.py
 │
 └── README.md
-
-````
-
----
-
-# 🎮 Game Modes
-
-| Mode | Status |
-|-------|--------|
-| AI Mode | ✅ |
-| Online Multiplayer | ✅ |
-| Tournament Mode | ✅ |
-| Spectator Mode | ✅ |
-
----
-
-# ⚡ Core Features
-
-- AI Opponent (Minimax)
-- Real-Time Multiplayer
-- WebSocket Communication
-- Room Management
-- Authentication
-- Leaderboards
-- Match History
-- Statistics Dashboard
-- Achievements
-- Friends System
-- Live Chat
-- Notifications
-- Tournament System
-- Responsive Design
-
----
-
-# 🔒 Security
-
-- JWT Authentication
-- Protected Routes
-- Row Level Security (RLS)
-- Input Validation
-- Environment Variables
-- Secure API Endpoints
-
----
-
-# 📈 Performance
-
-- Optimized Rendering
-- Lazy Loading
-- Code Splitting
-- Dynamic Imports
-- Memoization
-- Efficient State Management
+```
 
 ---
 
@@ -237,11 +142,11 @@ TicTacArena
 
 ```bash
 git clone https://github.com/Riyan-Abdullah/Tic_Tac_Toe.git
-````
+```
 
 ---
 
-## Frontend
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -251,7 +156,7 @@ npm run dev
 
 ---
 
-## Backend
+## Backend Setup
 
 ```bash
 cd backend
@@ -270,14 +175,14 @@ uvicorn app.main:app --reload
 
 # 🔑 Environment Variables
 
-Frontend
+### Frontend
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
 NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 ```
 
-Backend
+### Backend
 
 ```env
 SUPABASE_URL=YOUR_SUPABASE_URL
@@ -287,24 +192,71 @@ SECRET_KEY=YOUR_SECRET_KEY
 
 ---
 
-# 📊 Future Improvements
+# 🌐 Main Features
 
-* Voice Chat
-* Match Replay
-* Mobile App
-* Push Notifications
-* AI Match Analysis
-* Team Battles
-* Custom Themes
-* Daily Challenges
+- ✅ Authentication
+- ✅ AI Opponent
+- ✅ Online Multiplayer
+- ✅ FastAPI WebSockets
+- ✅ Room Management
+- ✅ Match History
+- ✅ Leaderboard
+- ✅ Player Statistics
+- ✅ Achievements
+- ✅ Responsive Design
+- ✅ Premium UI
+
+---
+
+# 🔒 Security
+
+- JWT Authentication
+- Protected Routes
+- Environment Variables
+- Row Level Security (RLS)
+- API Validation
+- Secure WebSocket Communication
+
+---
+
+# ⚡ Performance
+
+- Optimized React Components
+- Lazy Loading
+- Efficient State Management
+- Fast WebSocket Communication
+- Responsive UI
+- Production-Ready Architecture
+
+---
+
+# 📅 Future Improvements
+
+- Voice Chat
+- Spectator Mode
+- Daily Challenges
+- Custom Themes
+- Match Replay
+- Push Notifications
+- Mobile Application
 
 ---
 
 # 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome.
+Contributions are welcome.
 
-Feel free to fork the repository and submit a Pull Request.
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -312,26 +264,17 @@ Feel free to fork the repository and submit a Pull Request.
 
 **Riyan Abdullah**
 
-Data Science Student • Full Stack Developer • AI Enthusiast
+**Data Science Student | Full Stack Developer | AI Enthusiast**
 
-GitHub:
-https://github.com/Riyan-Abdullah
-
----
-
-# ⭐ Support
-
-If you found this project helpful, consider giving it a ⭐ on GitHub.
-
-It helps support future development and motivates continued improvements.
+GitHub: **https://github.com/Riyan-Abdullah**
 
 ---
 
 <div align="center">
 
-### 🎮 Built with ❤️ using Next.js, FastAPI & Supabase
+### ⭐ If you like this project, don't forget to star the repository!
 
-**Play • Compete • Climb the Leaderboard**
+Made with ❤️ using **Next.js**, **FastAPI**, **Supabase**, and **WebSockets**.
 
 </div>
-```
+````
