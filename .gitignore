@@ -1,0 +1,32 @@
+# Root gitignore for Tic Tac Arena
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.env
+.env*
+venv/
+backend/venv/
+backend/__pycache__/
+
+# Node / frontend
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/.env*
+
+# IDEs and OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

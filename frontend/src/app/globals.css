@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00E5FF;
+  --color-primary-dark: #00B8D4;
+  --color-secondary: #FF007F;
+  --color-success: #00E676;
+  --color-success-dark: #00C853;
+  --color-dark-bg: #060913;
+  --color-dark-card: #0A0F1E;
+}
+
+@layer base {
+  :root {
+    --background: #060913;
+    --foreground: #E0E7FF;
+    --card: #0A0F1E;
+    --card-foreground: #FFFFFF;
+    --border: #1E293B;
+    --input: #0F172A;
+    --ring: #00E5FF;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    background-image: 
+      radial-gradient(circle at 15% 10%, rgba(0, 229, 255, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(255, 0, 127, 0.06) 0%, transparent 40%);
+    background-attachment: fixed;
+    color: var(--foreground);
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: rgba(10, 15, 30, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .glass-hover {
+    transition: all 0.3s ease;
+  }
+  .glass-hover:hover {
+    border-color: rgba(0, 229, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .neon-glow-primary {
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6), 0 0 30px rgba(0, 229, 255, 0.3);
+  }
+  
+  .neon-glow-secondary {
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.6), 0 0 30px rgba(255, 0, 127, 0.3);
+  }
+
+  .neon-text-primary {
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+  }
+  
+  .neon-text-secondary {
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.8);
+  }
+
+  .cyber-gradient {
+    background: linear-gradient(135deg, #00E5FF, #FF007F);
+  }
+  
+  .cyber-border {
+    position: relative;
+  }
+  .cyber-border::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.5), rgba(255, 0, 127, 0.5));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
